@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\BlueCheese\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C99119-D4C8-48D0-B7DD-E71ED054B9FA}|BlueCheese.csproj|d:\\github\\bluecheese\\source\\car\\newscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C99119-D4C8-48D0-B7DD-E71ED054B9FA}|BlueCheese.csproj|solutionrelative:source\\car\\newscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewScript.cs",
+              "DocumentMoniker": "D:\\GitHub\\BlueCheese\\Source\\Car\\NewScript.cs",
+              "RelativeDocumentMoniker": "Source\\Car\\NewScript.cs",
+              "ToolTip": "D:\\GitHub\\BlueCheese\\Source\\Car\\NewScript.cs",
+              "RelativeToolTip": "Source\\Car\\NewScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T02:27:35.837Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
