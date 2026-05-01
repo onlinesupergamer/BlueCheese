@@ -27,12 +27,16 @@ public partial class Car : RigidBody3D
 
 	void Drive()
 	{
-		float PlayerInput = Input.GetActionStrength("Accelerate");
+		float AccelInput = Input.GetActionStrength("Accelerate");
 
 
 		for(int i = 0; i < Wheels.Length; i++)
 		{
-			ApplyForce(Wheels[i].Basis.Z * (EngineTorque * PlayerInput), Wheels[i].GetCollisionPoint());
+			if(Wheels[i].IsColliding())
+			{
+				ApplyForce(-Wheels[i].Basis.Z * (EngineTorque * AccelInput), Wheels[i].GetCollisionPoint());
+				
+			}
 		}
 	}
 
