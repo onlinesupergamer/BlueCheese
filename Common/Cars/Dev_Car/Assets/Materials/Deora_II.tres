@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://y3p2rwteewtt"]
+
+[ext_resource type="Texture2D" uid="uid://dptksjeybc2nt" path="res://Common/Cars/Dev_Car/Assets/DeoraII_deora.png" id="1_3f4dx"]
+
+[resource]
+resource_name = "Deora_II"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_3f4dx")
+roughness = 0.5

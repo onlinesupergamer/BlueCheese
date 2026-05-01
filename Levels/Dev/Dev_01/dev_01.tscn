@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://x4isxitr0csg"]
+
+[ext_resource type="PackedScene" uid="uid://n8s8ui6qx3mx" path="res://Common/Cars/Dev_Car/deora_ii.tscn" id="1_ak4qk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yno4q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ak4qk"]
+size = Vector3(154.56183, 1, 295.37756)
+
+[node name="Dev_01" type="Node3D" unique_id=1524090718]
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=658256455]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=209299165]
+transform = Transform3D(153.62952, 0, 0, 0, 1, 0, 0, 0, 292.94638, 0, 0, 0)
+mesh = SubResource("BoxMesh_yno4q")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=454367162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3387146, 0, 0.35638428)
+shape = SubResource("BoxShape3D_ak4qk")
+
+[node name="DeoraII" parent="." unique_id=1403682755 instance=ExtResource("1_ak4qk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9945221, 0)
+mass = 300.0
+
+[node name="RayCast3D" parent="DeoraII" index="2" unique_id=549179834]
+DampingValue = 200.0
+
+[node name="RayCast3D2" parent="DeoraII" index="3" unique_id=263680196]
+DampingValue = 200.0
+
+[node name="RayCast3D3" parent="DeoraII" index="4" unique_id=809828298]
+DampingValue = 200.0
+
+[node name="RayCast3D4" parent="DeoraII" index="5" unique_id=592660873]
+DampingValue = 200.0
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1197024467]
+transform = Transform3D(-0.5580059, 0, -0.82983696, 0, 1, 0, 0.82983696, 0, -0.5580059, -1.918335, 1.2476621, -2.0415318)
+
+[editable path="DeoraII"]

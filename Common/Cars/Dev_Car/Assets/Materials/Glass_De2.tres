@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cj0ka0m65fhd1"]
+
+[ext_resource type="Texture2D" uid="uid://bkh3yu7dab3pe" path="res://Common/Cars/Dev_Car/Assets/DeoraII_deoraW.png" id="1_wjpnj"]
+
+[resource]
+resource_name = "Glass_De2"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_wjpnj")
+roughness = 0.5
