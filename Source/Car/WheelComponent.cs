@@ -34,7 +34,7 @@ public partial class WheelComponent : RayCast3D
 			float Velocity = (PrevousLength - CurrentLength) / (float)delta;
 			Force = StiffnessValue * (RestLength - CurrentLength) + DampingValue * Velocity;
 
-			CarRb.ApplyForce(Basis.Y * Force, GlobalPosition);
+			CarRb.ApplyForce(Basis.Y * Force, Position);
 
 			PrevousLength = CurrentLength;
 

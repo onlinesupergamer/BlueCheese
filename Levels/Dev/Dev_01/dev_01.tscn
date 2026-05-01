@@ -7,6 +7,15 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_ak4qk"]
 size = Vector3(154.56183, 1, 295.37756)
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ak4qk"]
+
+[sub_resource type="Sky" id="Sky_2h6ln"]
+sky_material = SubResource("ProceduralSkyMaterial_ak4qk")
+
+[sub_resource type="Environment" id="Environment_c3pjv"]
+background_mode = 2
+sky = SubResource("Sky_2h6ln")
+
 [node name="Dev_01" type="Node3D" unique_id=1524090718]
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=658256455]
@@ -21,22 +30,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3387146, 0, 0.35638428)
 shape = SubResource("BoxShape3D_ak4qk")
 
 [node name="DeoraII" parent="." unique_id=1403682755 instance=ExtResource("1_ak4qk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9945221, 0)
-mass = 300.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1695623, -142.13766)
 
-[node name="RayCast3D" parent="DeoraII" index="2" unique_id=549179834]
-DampingValue = 200.0
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=256798990]
+environment = SubResource("Environment_c3pjv")
 
-[node name="RayCast3D2" parent="DeoraII" index="3" unique_id=263680196]
-DampingValue = 200.0
-
-[node name="RayCast3D3" parent="DeoraII" index="4" unique_id=809828298]
-DampingValue = 200.0
-
-[node name="RayCast3D4" parent="DeoraII" index="5" unique_id=592660873]
-DampingValue = 200.0
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1197024467]
-transform = Transform3D(-0.5580059, 0, -0.82983696, 0, 1, 0, 0.82983696, 0, -0.5580059, -1.918335, 1.2476621, -2.0415318)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500422084]
+transform = Transform3D(1, 0, 0, 0, 0.5769599, 0.81677246, 0, -0.81677246, 0.5769599, 0, 4.954897, 0)
 
 [editable path="DeoraII"]
