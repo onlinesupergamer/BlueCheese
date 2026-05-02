@@ -11,6 +11,7 @@ points = PackedVector3Array(0.5034845, 0.016948014, 0.50341535, 0.5010358, 0.070
 mass = 300.0
 script = ExtResource("1_1cmj5")
 Wheels = [NodePath("RayCast3D"), NodePath("RayCast3D2"), NodePath("RayCast3D3"), NodePath("RayCast3D4")]
+EngineTorque = 200.0
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=1628275413]
 mesh = ExtResource("2_2in2i")

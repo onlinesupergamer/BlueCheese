@@ -29,15 +29,9 @@ public partial class Car : RigidBody3D
 	{
 		float AccelInput = Input.GetActionStrength("Accelerate");
 
+		ApplyCentralForce(-GlobalTransform.Basis.Z * (EngineTorque * AccelInput));
 
-		for(int i = 0; i < Wheels.Length; i++)
-		{
-			if(Wheels[i].IsColliding())
-			{
-				ApplyForce(-Wheels[i].Basis.Z * (EngineTorque * AccelInput), Wheels[i].GetCollisionPoint());
-				
-			}
-		}
 	}
+
 
 }

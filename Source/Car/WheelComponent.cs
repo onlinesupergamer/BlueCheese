@@ -26,19 +26,31 @@ public partial class WheelComponent : RayCast3D
 
     public override void _PhysicsProcess(double delta)
     {
+		UpdateSuspension(delta);
+		Friction();
+    }
+
+	void UpdateSuspension(double delta)
+	{
 		Vector3 Start = GlobalPosition;
+		Vector3 Offset = Start - CarRb.GlobalPosition;
 
 		if(IsColliding())
 		{
 			CurrentLength = Start.DistanceTo(GetCollisionPoint());
-			float Velocity = (PrevousLength - CurrentLength) / (float)delta;
+			float Velocity = (PrevousLength - CurrentLength) / (float) delta;
 			Force = StiffnessValue * (RestLength - CurrentLength) + DampingValue * Velocity;
 
-			CarRb.ApplyForce(Basis.Y * Force, Position);
+			CarRb.ApplyForce(GetCollisionNormal() * Force, Offset);
 
 			PrevousLength = CurrentLength;
 
 		}
-    }
+	}
+
+	void Friction()
+	{
+		
+	}
 
 }

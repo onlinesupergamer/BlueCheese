@@ -29,13 +29,11 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3387146, 0, 0.35638428)
 shape = SubResource("BoxShape3D_ak4qk")
 
-[node name="DeoraII" parent="." unique_id=1403682755 instance=ExtResource("1_ak4qk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1695623, -142.13766)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=256798990]
 environment = SubResource("Environment_c3pjv")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=500422084]
 transform = Transform3D(1, 0, 0, 0, 0.5769599, 0.81677246, 0, -0.81677246, 0.5769599, 0, 4.954897, 0)
 
-[editable path="DeoraII"]
+[node name="DeoraII" parent="." unique_id=1403682755 instance=ExtResource("1_ak4qk")]
+transform = Transform3D(0.16836894, 0, -0.98572403, 0, 1, 0, 0.98572403, 0, 0.16836894, 32.424866, 0.76465297, -98.87008)
