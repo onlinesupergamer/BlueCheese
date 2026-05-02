@@ -32,7 +32,7 @@ public partial class WheelComponent : RayCast3D
     {
 		UpdateSuspension(delta);
 		Friction();
-		TestSuspension();
+
     }
 
 	void UpdateSuspension(double delta)

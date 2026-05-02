@@ -9,8 +9,9 @@ using System.ComponentModel;
 public partial class Car : RigidBody3D
 {
 	[Export] WheelComponent[] Wheels = new WheelComponent[4];
+	[Export] Curve EngineCurve = new Curve();
 	[Export] float EngineTorque = 300.0f;
-	[Export] float TireTurnSpeed = 2.0f;
+	[Export] float MaxSpeed;
 	[Export] float TireTurnMax = 25.0f;
 
 
@@ -28,6 +29,7 @@ public partial class Car : RigidBody3D
     {
         Drive();
 		Steer();
+
     }
 
 	void Drive()
@@ -35,22 +37,32 @@ public partial class Car : RigidBody3D
 		float AccelInput = Input.GetActionStrength("Accelerate");
 		float BrakeInput = Input.GetActionStrength("Brake");
 
+		float CurrentSpeed = Math.Clamp(GetCurrentSpeed() / MaxSpeed, 0.0f, 1.0f);
+		float TotalTorque = EngineCurve.SampleBaked(CurrentSpeed) * EngineTorque;
+		
+
+
 		for(int i = 0; i < Wheels.Length; i++)
 		{
 			if(Wheels[i].IsColliding())
 			{
 				if(AccelInput > 0.0f)
 				{
-					ApplyForce(-Wheels[i].GlobalBasis.Z * (EngineTorque * AccelInput), GlobalPosition - Wheels[i].GlobalPosition);
+					ApplyForce(-Wheels[i].GlobalBasis.Z *  (TotalTorque * AccelInput), GlobalPosition - Wheels[i].GlobalPosition);
 					
 				}
 				if(BrakeInput > 0.0f)
 				{
-					ApplyForce(Wheels[i].GlobalBasis.Z * (EngineTorque * BrakeInput), GlobalPosition - Wheels[i].GlobalPosition);
+					ApplyForce(Wheels[i].GlobalBasis.Z * (TotalTorque * BrakeInput), GlobalPosition - Wheels[i].GlobalPosition);
 					
 				}		
 			}
 		}
+	}
+
+	float GetCurrentSpeed()
+	{
+		return LinearVelocity.Dot(-GlobalBasis.Z);
 	}
 
 	void Steer()
@@ -58,6 +70,9 @@ public partial class Car : RigidBody3D
 		float RightInput = -Input.GetActionStrength("SteerRight");
 		float LeftInput = -Input.GetActionStrength("SteerLeft");
 		float SteeringInput = RightInput - LeftInput;
+
+		float CurrentSpeed = Math.Clamp(GetCurrentSpeed() / MaxSpeed, 0.0f, 1.0f);
+		
 
 		for (int i = 0; i < Wheels.Length; i++)
 		{

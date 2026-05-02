@@ -272,7 +272,7 @@ adjustment_saturation = 1.35
 [node name="Volc" type="Node3D" unique_id=2018502815]
 
 [node name="DeoraII" parent="." unique_id=1403682755 instance=ExtResource("3_h0geh")]
-transform = Transform3D(0.9933044, 0, 0.115526676, 0, 1, 0, -0.115526676, 0, 0.9933044, 0.79486847, 0.44856358, 59.492325)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.358122, 0.5153576, 58.800323)
 
 [node name="Track_01" type="Node3D" parent="." unique_id=184730010]
 
@@ -305,5 +305,3 @@ transform = Transform3D(1, 0, 0, 0, 0.3814899, 0.92437303, 0, -0.92437303, 0.381
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=921935924]
 environment = SubResource("Environment_q01yp")
-
-[editable path="DeoraII"]
