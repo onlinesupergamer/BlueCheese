@@ -10,6 +10,7 @@ public partial class Car : RigidBody3D
 {
 	[Export] WheelComponent[] Wheels = new WheelComponent[4];
 	[Export] Curve EngineCurve = new Curve();
+	[Export] Curve SteeringCurve = new Curve(); //This might not be needed
 	[Export] float EngineTorque = 300.0f;
 	[Export] float MaxSpeed;
 	[Export] float TireTurnMax = 25.0f;
@@ -72,13 +73,13 @@ public partial class Car : RigidBody3D
 		float SteeringInput = RightInput - LeftInput;
 
 		float CurrentSpeed = Math.Clamp(GetCurrentSpeed() / MaxSpeed, 0.0f, 1.0f);
-		
+		float TotalSteering = SteeringCurve.SampleBaked(CurrentSpeed) * TireTurnMax;
 
 		for (int i = 0; i < Wheels.Length; i++)
 		{
 			if(Wheels[i].bIsSteering)
 			{
-				Vector3 NewRot = new Vector3(0, SteeringInput * TireTurnMax, 0);
+				Vector3 NewRot = new Vector3(0, SteeringInput * TotalSteering, 0);
 				Wheels[i].RotationDegrees = NewRot;
 			}
 		}

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dy0a64rk1rjdd"]
+
+[ext_resource type="Texture2D" uid="uid://df62163rs6kj5" path="res://Levels/Dev/Dev_01/Assets/Test_Track_01_Edit_Hawaiian_Lava_Stone_temkfaar_1K_BaseColor.jpg" id="1_ggyoo"]
+
+[resource]
+resource_name = "Rock_01"
+cull_mode = 2
+albedo_texture = ExtResource("1_ggyoo")

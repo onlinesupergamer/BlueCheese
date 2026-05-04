@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d03d2jsp73qje"]
+
+[ext_resource type="Texture2D" uid="uid://dn4qye54apnaw" path="res://Levels/Dev/Dev_01/Assets/Test_Track_01_Edit_Lava004_1K-JPG_Color.jpg" id="1_du022"]
+
+[resource]
+resource_name = "Lava_01"
+cull_mode = 2
+albedo_texture = ExtResource("1_du022")
+emission_enabled = true
+emission_energy_multiplier = 5.03
+emission_texture = ExtResource("1_du022")

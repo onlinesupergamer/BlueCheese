@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dw85rihbsuhpb"]
+
+[ext_resource type="Texture2D" uid="uid://bvqfs1kjnw7d8" path="res://Levels/Dev/Dev_01/Assets/Test_Track_01_Edit_MainTrack_01.png" id="1_tl7dj"]
+
+[resource]
+resource_name = "Track_01.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_tl7dj")
