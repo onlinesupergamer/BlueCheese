@@ -12,10 +12,12 @@ public partial class WheelComponent : RayCast3D
 	[Export] float WheelRadius;
 	[Export] public bool bIsSteering;
 
+	public bool bIsGrounded;
 
 	float CurrentLength;
 	float PrevousLength;
 	float Force;
+
 
 
 
@@ -32,7 +34,6 @@ public partial class WheelComponent : RayCast3D
     {
 		UpdateSuspension(delta);
 		Friction();
-
     }
 
 	void UpdateSuspension(double delta)
@@ -49,7 +50,12 @@ public partial class WheelComponent : RayCast3D
 			CarRb.ApplyForce(GetCollisionNormal() * Force, Offset);
 
 			PrevousLength = CurrentLength;
+			bIsGrounded = true;
+		}
 
+		else
+		{
+			bIsGrounded = false;
 		}
 	}
 

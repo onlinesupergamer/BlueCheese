@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://n8s8ui6qx3mx"]
 
 [ext_resource type="Script" uid="uid://cne5i86dcr04k" path="res://Source/Car/Car.cs" id="1_1cmj5"]
+[ext_resource type="PhysicsMaterial" uid="uid://b0k8pyubf7u30" path="res://Common/Cars/Dev_Car/FrictionlessPhysMat.tres" id="1_o4kgb"]
 [ext_resource type="ArrayMesh" uid="uid://denjmmdqopcb4" path="res://Common/Cars/Dev_Car/Assets/DeoraII_Deora_II.res" id="2_2in2i"]
 [ext_resource type="Script" uid="uid://weviw1yb5m1y" path="res://Source/Car/WheelComponent.cs" id="3_2in2i"]
 [ext_resource type="Script" uid="uid://11xj25i333sn" path="res://Source/Gameplay/PlayerCamera.cs" id="4_fbd8n"]
@@ -21,6 +22,7 @@ points = PackedVector3Array(0.5034845, 0.016948014, 0.50341535, 0.5010358, 0.070
 [node name="DeoraII" type="RigidBody3D" unique_id=1403682755 node_paths=PackedStringArray("Wheels")]
 physics_interpolation_mode = 1
 mass = 300.0
+physics_material_override = ExtResource("1_o4kgb")
 script = ExtResource("1_1cmj5")
 Wheels = [NodePath("RayCast3D"), NodePath("RayCast3D2"), NodePath("RayCast3D3"), NodePath("RayCast3D4")]
 EngineCurve = SubResource("Curve_2in2i")
@@ -28,6 +30,7 @@ SteeringCurve = SubResource("Curve_fbd8n")
 EngineTorque = 250.0
 MaxSpeed = 20.0
 TireTurnMax = 30.0
+GravityValue = 10.0
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=1628275413]
 mesh = ExtResource("2_2in2i")

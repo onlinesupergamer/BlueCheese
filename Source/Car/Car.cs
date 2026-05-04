@@ -14,6 +14,7 @@ public partial class Car : RigidBody3D
 	[Export] float EngineTorque = 300.0f;
 	[Export] float MaxSpeed;
 	[Export] float TireTurnMax = 25.0f;
+	[Export] float GravityValue;
 
 
 
@@ -28,9 +29,9 @@ public partial class Car : RigidBody3D
 
     public override void _PhysicsProcess(double delta)
     {
+		Gravity(delta);
         Drive();
 		Steer();
-
     }
 
 	void Drive()
@@ -83,5 +84,24 @@ public partial class Car : RigidBody3D
 				Wheels[i].RotationDegrees = NewRot;
 			}
 		}
+	}
+
+	void Gravity(double delta)
+	{
+		Vector3 GravityForce = new Vector3(0, 0, 0);
+
+		if(Wheels[0].bIsGrounded || Wheels[1].bIsGrounded || Wheels[2].bIsGrounded || Wheels[3].bIsGrounded)
+		{
+			//Consider this grounded
+			GravityForce = -GlobalBasis.Y * GravityValue;
+
+		}
+		
+		else
+		{
+			GravityForce = new Vector3(0, -1, 0) * GravityValue;
+		}
+
+		ApplyCentralForce(GravityForce * (float)delta);
 	}
 }
