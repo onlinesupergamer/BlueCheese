@@ -4,11 +4,9 @@ using System;
 public partial class WheelComponent : RayCast3D
 {
 	[Export] RigidBody3D CarRb;
-	[Export] float MaxWheelDistance;
 	[Export] float StiffnessValue;
 	[Export] float RestLength;
 	[Export] float DampingValue;
-	[Export] float OverExtend;
 	[Export] float WheelRadius;
 	[Export] public bool bIsSteering;
 

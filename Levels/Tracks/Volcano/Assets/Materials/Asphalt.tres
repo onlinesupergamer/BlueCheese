@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://yyvdiddtx1ug"]
+
+[ext_resource type="Texture2D" uid="uid://ccwwm8ux3vafx" path="res://Levels/Tracks/Volcano/Assets/Volcano_Track_E2202EE3066E84536C2FDDB881C0D160.png" id="1_1fap3"]
+
+[resource]
+resource_name = "Asphalt"
+cull_mode = 2
+albedo_texture = ExtResource("1_1fap3")

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn4qye54apnaw"
-path.s3tc="res://.godot/imported/Test_Track_01_Edit_Lava004_1K-JPG_Color.jpg-90628e54d132f11f788a2bba65289630.s3tc.ctex"
+uid="uid://b8xvodhpklo1a"
+path.s3tc="res://.godot/imported/Volcano_Track_67DE9A5DB6F02A65B5C91BB09153CA26.png-3d1f02b7418c991414003ebea3f95a18.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "e6530882d1b2697ea2d25d8a69100483"
+"md5": "3efca69e949fd6ae8728404939542ca4"
 }
 
 [deps]
 
-source_file="res://Levels/Dev/Dev_01/Assets/Test_Track_01_Edit_Lava004_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/Test_Track_01_Edit_Lava004_1K-JPG_Color.jpg-90628e54d132f11f788a2bba65289630.s3tc.ctex"]
+source_file="res://Levels/Tracks/Volcano/Assets/Volcano_Track_67DE9A5DB6F02A65B5C91BB09153CA26.png"
+dest_files=["res://.godot/imported/Volcano_Track_67DE9A5DB6F02A65B5C91BB09153CA26.png-3d1f02b7418c991414003ebea3f95a18.s3tc.ctex"]
 
 [params]
 

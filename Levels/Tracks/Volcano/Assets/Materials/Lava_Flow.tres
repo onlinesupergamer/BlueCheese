@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cy0sg0o4bt73k"]
+
+[ext_resource type="Texture2D" uid="uid://gesv54yg4agj" path="res://Levels/Tracks/Volcano/Assets/Volcano_Track_D509503EB95C6C0717DE0A81D49ED167.png" id="1_qacse"]
+
+[resource]
+resource_name = "Lava_Flow"
+cull_mode = 2
+albedo_texture = ExtResource("1_qacse")
+emission_enabled = true
+emission_texture = ExtResource("1_qacse")

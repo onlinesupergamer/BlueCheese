@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dedfq7bpv8ods"
-path.s3tc="res://.godot/imported/Track_01_deoraW.png-68690e72bf4ecd36fb0ee94b9855354d.s3tc.ctex"
+uid="uid://ccwwm8ux3vafx"
+path.s3tc="res://.godot/imported/Volcano_Track_E2202EE3066E84536C2FDDB881C0D160.png-8ec3c60ad8f836a0ad44592d6d37c182.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "d8512e06d01bfb38dfb665dda2ddebbc"
+"md5": "a640fa05f2859250d5fd278894e940bd"
 }
 
 [deps]
 
-source_file="res://Levels/Tracks/Volc/Assets/Track_01_deoraW.png"
-dest_files=["res://.godot/imported/Track_01_deoraW.png-68690e72bf4ecd36fb0ee94b9855354d.s3tc.ctex"]
+source_file="res://Levels/Tracks/Volcano/Assets/Volcano_Track_E2202EE3066E84536C2FDDB881C0D160.png"
+dest_files=["res://.godot/imported/Volcano_Track_E2202EE3066E84536C2FDDB881C0D160.png-8ec3c60ad8f836a0ad44592d6d37c182.s3tc.ctex"]
 
 [params]
 

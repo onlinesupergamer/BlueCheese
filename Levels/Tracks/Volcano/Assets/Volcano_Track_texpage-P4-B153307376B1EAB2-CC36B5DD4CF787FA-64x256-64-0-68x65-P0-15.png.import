@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca5hqrqjnmmgk"
-path.s3tc="res://.godot/imported/Track_01_A4D29F66F0E5D87169D247FF4B5B5F9D.png-2c322e3e0b668de804a7ee85a6ff9d70.s3tc.ctex"
+uid="uid://b8exevqtqljbe"
+path.s3tc="res://.godot/imported/Volcano_Track_texpage-P4-B153307376B1EAB2-CC36B5DD4CF787FA-64x256-64-0-68x65-P0-15.png-148c94e770515a77c1d4517f517930b3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1616b8b054954ce27cb803d453cbf9a8"
+"md5": "e66910e8b312f853b967d2cf70d4b33b"
 }
 
 [deps]
 
-source_file="res://Levels/Tracks/Volc/Assets/Track_01_A4D29F66F0E5D87169D247FF4B5B5F9D.png"
-dest_files=["res://.godot/imported/Track_01_A4D29F66F0E5D87169D247FF4B5B5F9D.png-2c322e3e0b668de804a7ee85a6ff9d70.s3tc.ctex"]
+source_file="res://Levels/Tracks/Volcano/Assets/Volcano_Track_texpage-P4-B153307376B1EAB2-CC36B5DD4CF787FA-64x256-64-0-68x65-P0-15.png"
+dest_files=["res://.godot/imported/Volcano_Track_texpage-P4-B153307376B1EAB2-CC36B5DD4CF787FA-64x256-64-0-68x65-P0-15.png-148c94e770515a77c1d4517f517930b3.s3tc.ctex"]
 
 [params]
 

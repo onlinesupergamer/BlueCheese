@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cx2vc0b1jeq83"]
+
+[ext_resource type="Texture2D" uid="uid://b8exevqtqljbe" path="res://Levels/Tracks/Volcano/Assets/Volcano_Track_texpage-P4-B153307376B1EAB2-CC36B5DD4CF787FA-64x256-64-0-68x65-P0-15.png" id="1_f4iej"]
+
+[resource]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("1_f4iej")

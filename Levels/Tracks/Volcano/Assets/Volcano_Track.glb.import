@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dgp52b08op5pa"
-path="res://.godot/imported/Test_Track_01_Edit.glb-d77ec5d8b6baeb056627807219984b8a.scn"
+uid="uid://llgyve2ygnn8"
+path="res://.godot/imported/Volcano_Track.glb-3de26519bc044dc2460c5f9d8595f2bd.scn"
 
 [deps]
 
-source_file="res://Levels/Dev/Dev_01/Assets/Test_Track_01_Edit.glb"
-dest_files=["res://.godot/imported/Test_Track_01_Edit.glb-d77ec5d8b6baeb056627807219984b8a.scn"]
+source_file="res://Levels/Tracks/Volcano/Assets/Volcano_Track.glb"
+dest_files=["res://.godot/imported/Volcano_Track.glb-3de26519bc044dc2460c5f9d8595f2bd.scn"]
 
 [params]
 
@@ -39,25 +39,20 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"Lava_01": {
+"Asphalt": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Levels/Dev/Dev_01/Assets/Materials/Lava_01.tres",
-"use_external/path": "uid://d03d2jsp73qje"
+"use_external/fallback_path": "res://Levels/Tracks/Volcano/Assets/Materials/Asphalt.tres",
+"use_external/path": "uid://yyvdiddtx1ug"
 },
-"Rock_01": {
+"Lava_Flow": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Levels/Dev/Dev_01/Assets/Materials/Rock_01.tres",
-"use_external/path": "uid://dy0a64rk1rjdd"
+"use_external/fallback_path": "res://Levels/Tracks/Volcano/Assets/Materials/Lava_Flow.tres",
+"use_external/path": "uid://cy0sg0o4bt73k"
 },
-"Sidewall.001": {
+"Material": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Levels/Dev/Dev_01/Assets/Materials/Sidewall.001.tres",
-"use_external/path": "uid://d4i7ux6ithvm4"
-},
-"Track_01.001": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Levels/Dev/Dev_01/Assets/Materials/Track_01.001.tres",
-"use_external/path": "uid://dw85rihbsuhpb"
+"use_external/fallback_path": "res://Levels/Tracks/Volcano/Assets/Materials/Material.tres",
+"use_external/path": "uid://cx2vc0b1jeq83"
 }
 }
 }
