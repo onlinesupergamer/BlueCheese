@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccspjvrmgndiq"
-path.s3tc="res://.godot/imported/Dawn_Encounters_C32E5A2CF4D732B5B1994660EC373B3C.png-597af3f037eb3a9d37d5a7e19bf6c521.s3tc.ctex"
+uid="uid://oyai40e6jm66"
+path.s3tc="res://.godot/imported/Twinmill_Ref_45FED1C45C69CD7E07CC1EEFC16CC51B.png-7cccdea404142427fe317e808ad58bc4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2a52809666067bcbad25219286129a1a"
+"md5": "f2f515127b01fbbf2cffcc09d1316a3a"
 }
 
 [deps]
 
-source_file="res://Levels/Tracks/Dawn_Encounters/Assets/Dawn_Encounters_C32E5A2CF4D732B5B1994660EC373B3C.png"
-dest_files=["res://.godot/imported/Dawn_Encounters_C32E5A2CF4D732B5B1994660EC373B3C.png-597af3f037eb3a9d37d5a7e19bf6c521.s3tc.ctex"]
+source_file="res://Common/Cars/Twinmill/Assets/Twinmill_Ref_45FED1C45C69CD7E07CC1EEFC16CC51B.png"
+dest_files=["res://.godot/imported/Twinmill_Ref_45FED1C45C69CD7E07CC1EEFC16CC51B.png-7cccdea404142427fe317e808ad58bc4.s3tc.ctex"]
 
 [params]
 

@@ -48,9 +48,11 @@ public partial class Car : RigidBody3D
 		{
 			if(Wheels[i].IsColliding())
 			{
+				Vector3 ProjectedVector = Wheels[i].GlobalBasis.Z.Project(Wheels[i].GetCollisionNormal());
+
 				if(AccelInput > 0.0f)
 				{
-					ApplyForce(-Wheels[i].GlobalBasis.Z *  (TotalTorque * AccelInput), GlobalPosition - Wheels[i].GlobalPosition);
+					ApplyForce(-Wheels[i].GlobalBasis.Z * (TotalTorque * AccelInput), GlobalPosition - Wheels[i].GlobalPosition);
 					
 				}
 				if(BrakeInput > 0.0f)

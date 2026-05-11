@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://c4bq30aic8gla"]
+
+[ext_resource type="ArrayMesh" uid="uid://cs3ydxsqouxws" path="res://Common/Cars/Twinmill/Assets/Twinmill_Ref_shot_2026-05-07_04-09-21-689.res" id="1_7apqa"]
+[ext_resource type="Script" uid="uid://cne5i86dcr04k" path="res://Source/Car/Car.cs" id="1_p1xts"]
+[ext_resource type="Script" uid="uid://weviw1yb5m1y" path="res://Source/Car/WheelComponent.cs" id="3_clq2s"]
+[ext_resource type="Script" uid="uid://11xj25i333sn" path="res://Source/Gameplay/PlayerCamera.cs" id="4_clq2s"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_clq2s"]
+friction = 0.0
+
+[sub_resource type="Curve" id="Curve_p1xts"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+metadata/_snap_enabled = true
+
+[sub_resource type="Curve" id="Curve_clq2s"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.99563324, 0.22471917), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_clq2s"]
+points = PackedVector3Array(0.61469203, -0.11419163, -0.7587711, 0.46442288, -0.19444755, -0.813077, 0.46454388, -0.19064814, -1.1186526, 0.5928963, 0.17768593, -1.5857388, 0.59265417, 0.14650999, -1.3558536, 0.5443403, 0.055480435, 0.30399048, 0.43257695, -0.18674465, 0.73506045, 0.2833975, -0.19715397, -1.1178085, 0.34599954, -0.19871537, 0.14951444, 0.05526924, -0.14188044, -1.6397631, 0.11835563, -0.13527052, -1.6403259, 0.2840029, -0.10216885, -1.6437024, 0.42652255, 0.010772362, -1.6549575, -0.43234885, 0.0114489645, -1.6549575, -0.59678525, 0.17862277, -1.5857388, 0.002354145, 0.269288, -1.0865755, 0.31754404, 0.33247262, 0.010232687, 0.5208494, 0.0838979, 0.49645257, 0.48900348, 0.02524133, 0.6275742, 0.37784547, -0.091759525, 0.9210508, 0.20444864, -0.1030016, 1.1334906, -0.00043088198, -0.102012716, 1.2195919, -0.44203585, -0.18606804, 0.7353418, -0.35521632, -0.1981949, 0.14979589, -0.29188773, -0.19668555, -1.1178085, -0.094394505, -0.14177635, -1.6394818, -0.1494892, -0.13511437, -1.6403259, -0.2911612, -0.10175248, -1.6437024, -0.17261684, -0.048612863, -1.6490486, 0.13470244, -0.048873097, -1.6490486, 0.0874784, -0.028887182, -1.6510183, -0.11740112, -0.028731048, -1.6510183, -0.47303414, -0.18991949, -1.1183712, -0.62233466, -0.113254786, -0.7584898, -0.5970274, 0.14744686, -1.3555722, -0.55077213, 0.056313172, 0.30399048, -0.52703905, 0.08473064, 0.4967339, -0.3207065, 0.3329931, 0.010232687, -6.759167e-05, -0.03622575, 1.1346161, 0.38680595, 0.073020145, 0.7480037, -0.21318105, -0.102637276, 1.1334906, -0.38645682, -0.091187015, 0.9213321, -0.49591964, 0.025969982, 0.6278558, -0.55149865, -0.058241487, 0.15120268, -0.4652846, -0.1937189, -0.8127956, -0.40110838, 0.07364471, 0.74828506)
+
+[node name="Twinmill" type="RigidBody3D" unique_id=1606419956 node_paths=PackedStringArray("Wheels")]
+mass = 300.0
+physics_material_override = SubResource("PhysicsMaterial_clq2s")
+gravity_scale = 0.0
+script = ExtResource("1_p1xts")
+Wheels = [NodePath("RayCast3D"), NodePath("RayCast3D2"), NodePath("RayCast3D3"), NodePath("RayCast3D4")]
+EngineCurve = SubResource("Curve_p1xts")
+SteeringCurve = SubResource("Curve_clq2s")
+EngineTorque = 3000.0
+MaxSpeed = 20.0
+GravityValue = 200000.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1238839626]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+mesh = ExtResource("1_7apqa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1218040035]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_clq2s")
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1026933211 node_paths=PackedStringArray("CarRb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4000001, 0, -0.4915143)
+target_position = Vector3(0, -0.5, 0)
+script = ExtResource("3_clq2s")
+CarRb = NodePath("..")
+StiffnessValue = 15000.0
+RestLength = 0.5
+DampingValue = 350.0
+bIsSteering = true
+
+[node name="RayCast3D3" type="RayCast3D" parent="." unique_id=1449473396 node_paths=PackedStringArray("CarRb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39999992, 0, 1.3084856)
+target_position = Vector3(0, -0.5, 0)
+script = ExtResource("3_clq2s")
+CarRb = NodePath("..")
+StiffnessValue = 15000.0
+RestLength = 0.5
+DampingValue = 350.0
+
+[node name="RayCast3D2" type="RayCast3D" parent="." unique_id=66530759 node_paths=PackedStringArray("CarRb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.39999992, 0, -0.4915144)
+target_position = Vector3(0, -0.5, 0)
+script = ExtResource("3_clq2s")
+CarRb = NodePath("..")
+StiffnessValue = 15000.0
+RestLength = 0.5
+DampingValue = 350.0
+bIsSteering = true
+
+[node name="RayCast3D4" type="RayCast3D" parent="." unique_id=1041697787 node_paths=PackedStringArray("CarRb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4000001, 0, 1.3084855)
+target_position = Vector3(0, -0.5, 0)
+script = ExtResource("3_clq2s")
+CarRb = NodePath("..")
+StiffnessValue = 15000.0
+RestLength = 0.5
+DampingValue = 350.0
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1672183383 node_paths=PackedStringArray("m_Car")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5860814, 3.6850986)
+top_level = true
+script = ExtResource("4_clq2s")
+m_Car = NodePath("..")
+HeightOffset = 1.0
+DistanceOffset = 3.0

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://djs4xv7m1rj8y"]
+
+[ext_resource type="Texture2D" uid="uid://oyai40e6jm66" path="res://Common/Cars/Twinmill/Assets/Twinmill_Ref_45FED1C45C69CD7E07CC1EEFC16CC51B.png" id="1_hrn0p"]
+
+[resource]
+resource_name = "45FED1C45C69CD7E07CC1EEFC16CC51B.001"
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_hrn0p")

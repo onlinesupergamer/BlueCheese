@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b8exevqtqljbe" path="res://Levels/Tracks/Volcano/Assets/Volcano_Track_texpage-P4-B153307376B1EAB2-CC36B5DD4CF787FA-64x256-64-0-68x65-P0-15.png" id="1_o04ne"]
 [ext_resource type="Texture2D" uid="uid://ccwwm8ux3vafx" path="res://Levels/Tracks/Volcano/Assets/Volcano_Track_E2202EE3066E84536C2FDDB881C0D160.png" id="2_14ba7"]
-[ext_resource type="PackedScene" uid="uid://n8s8ui6qx3mx" path="res://Common/Cars/Dev_Car/deora_ii.tscn" id="2_ofn88"]
+[ext_resource type="PackedScene" uid="uid://n8s8ui6qx3mx" path="res://Common/Cars/Twinmill/deora_ii.tscn" id="2_ofn88"]
 [ext_resource type="Material" uid="uid://cy0sg0o4bt73k" path="res://Levels/Tracks/Volcano/Assets/Materials/Lava_Flow.tres" id="3_14ba7"]
 [ext_resource type="LightmapGIData" uid="uid://cntos57if453a" path="res://Levels/Tracks/Volcano/volcano.lmbake" id="5_14ba7"]
 

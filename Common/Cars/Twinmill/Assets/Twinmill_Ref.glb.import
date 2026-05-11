@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://wawj6457hf1s"
-path="res://.godot/imported/DeoraII.glb-0de63aa83a72fc0af723ac2492e467fd.scn"
+uid="uid://0qkdecbjem6t"
+path="res://.godot/imported/Twinmill_Ref.glb-625d9bb9fa80f65e4291919054deb586.scn"
 
 [deps]
 
-source_file="res://Common/Cars/Dev_Car/Assets/DeoraII.glb"
-dest_files=["res://.godot/imported/DeoraII.glb-0de63aa83a72fc0af723ac2492e467fd.scn"]
+source_file="res://Common/Cars/Twinmill/Assets/Twinmill_Ref.glb"
+dest_files=["res://.godot/imported/Twinmill_Ref.glb-625d9bb9fa80f65e4291919054deb586.scn"]
 
 [params]
 
@@ -39,26 +39,21 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"Deora_II": {
+"45FED1C45C69CD7E07CC1EEFC16CC51B.001": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Common/Cars/Dev_Car/Assets/Materials/Deora_II.tres",
-"use_external/path": "uid://y3p2rwteewtt"
-},
-"Glass_De2": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Common/Cars/Dev_Car/Assets/Materials/Glass_De2.tres",
-"use_external/path": "uid://cj0ka0m65fhd1"
+"use_external/fallback_path": "res://Common/Cars/Twinmill/Assets/Materials/45FED1C45C69CD7E07CC1EEFC16CC51B.001.tres",
+"use_external/path": "uid://djs4xv7m1rj8y"
 }
 },
 "meshes": {
-"DeoraII_Deora_II": {
+"Twinmill_Ref_shot_2026-05-07_04-09-21-689": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Common/Cars/Dev_Car/Assets/DeoraII_Deora_II.res",
-"save_to_file/path": "uid://denjmmdqopcb4"
+"save_to_file/fallback_path": "res://Common/Cars/Twinmill/Assets/Twinmill_Ref_shot_2026-05-07_04-09-21-689.res",
+"save_to_file/path": "uid://drudyfibtgm87"
 }
 }
 }
