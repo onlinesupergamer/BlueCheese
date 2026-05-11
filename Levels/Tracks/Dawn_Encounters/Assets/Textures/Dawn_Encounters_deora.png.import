@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmto5ppm0xmgk"
-path.s3tc="res://.godot/imported/Dawn_Encounters_deoraW.png-2c8ab487a629cbc6f5dfd9be35cdfe67.s3tc.ctex"
+uid="uid://dqsgbx6r8e6nb"
+path.s3tc="res://.godot/imported/Dawn_Encounters_deora.png-700fc5d4e0530dfc96f84dfd52b03d78.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "d8512e06d01bfb38dfb665dda2ddebbc"
+"md5": "d5fd6e52ab380bfeb15996dc09dadaae"
 }
 
 [deps]
 
-source_file="res://Levels/Tracks/Dawn_Encounters/Assets/Dawn_Encounters_deoraW.png"
-dest_files=["res://.godot/imported/Dawn_Encounters_deoraW.png-2c8ab487a629cbc6f5dfd9be35cdfe67.s3tc.ctex"]
+source_file="res://Levels/Tracks/Dawn_Encounters/Assets/Textures/Dawn_Encounters_deora.png"
+dest_files=["res://.godot/imported/Dawn_Encounters_deora.png-700fc5d4e0530dfc96f84dfd52b03d78.s3tc.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bh16s6wfrw6jk"]
 
-[ext_resource type="Texture2D" uid="uid://dbu0imrm74giq" path="res://Levels/Tracks/Dawn_Encounters/Assets/Dawn_Encounters_FE7C48B6678A0D36E946E2460B30A0C8.png" id="2_4x33s"]
+[ext_resource type="Texture2D" uid="uid://dbu0imrm74giq" path="res://Levels/Tracks/Dawn_Encounters/Assets/Textures/Dawn_Encounters_FE7C48B6678A0D36E946E2460B30A0C8.png" id="2_4x33s"]
 [ext_resource type="PackedScene" uid="uid://c4bq30aic8gla" path="res://Common/Cars/Twinmill/twinmill.tscn" id="2_elmfd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbr7u"]
