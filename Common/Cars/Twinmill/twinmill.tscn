@@ -28,8 +28,8 @@ script = ExtResource("1_p1xts")
 Wheels = [NodePath("RayCast3D"), NodePath("RayCast3D2"), NodePath("RayCast3D3"), NodePath("RayCast3D4")]
 EngineCurve = SubResource("Curve_p1xts")
 SteeringCurve = SubResource("Curve_clq2s")
-EngineTorque = 3000.0
-MaxSpeed = 20.0
+EngineTorque = 1500.0
+MaxSpeed = 16.0
 GravityValue = 200000.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1238839626]
