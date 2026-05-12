@@ -133,10 +133,10 @@ transform = Transform3D(0.03641702, 0, -0.99933666, 0.3229599, 0.9463395, 0.0117
 shape = SubResource("ConcavePolygonShape3D_murco")
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=820592636]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.634281, 0, -35.98474)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.634281, 0, -34.98473)
 
 [node name="Rock01Sphere2" type="MeshInstance3D" parent="StaticBody3D2" unique_id=508374797]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.72362, 10.072005, -81.57202)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.56513, 10.072005, -81.57202)
 mesh = ExtResource("5_mguwy")
 skeleton = NodePath("../..")
 
